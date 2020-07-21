@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <title>Mon IP</title>
+        <meta property="og:image" content="">
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:title" content="Mon IP">
+        <meta property="og:site_name" content="Mon IP" />
+        <meta property="og:url" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="imgs/logo.png"/>
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.14.0/css/all.css'>
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">
+                <img src="imgs/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Mon IP
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- NO MENU
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fal fa-home"></i> Home</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+
+            <!-- Button Social -->
+            <div class="btn-group mr-2" role="group" aria-label="Social">
+                <a type="button" class="btn btn-twitter" href="https://twitter.com/DearVooDoo" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a type="button" class="btn btn-twitch" href="https://twitch.tv/dear_voodoo" target="_blank"><i class="fab fa-twitch"></i></a>
+                <a type="button" class="btn btn-instagram" href="https://instagram.com/dearvoodoo" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a type="button" class="btn btn-discord" href="https://discord.gg/XeeXPA7" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </nav>
+
+        <div class="container h-75 d-flex justify-content-center main-content">
+            <div class="mt-auto mb-6">
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="jumbotron bg-dark mt-5 p-4" style="height: auto; width: auto;">
+                            <h3>Votre IP est: <span id="ipv4"></span></h3>
+
+                            <h6>Votre IPv6 est: <span id="ipv6"></span></h6>
+                            <br>
+                            <h5><u>Geo</u></h5>
+                            <h6 id="FAI"></h6>
+                            <h6 id="Localisation"></h6>
+                            <br>
+                            <hr class="full">
+                            <h3>A propos de mon IP</h3>
+                            <p class="text-left">Une adresse IP (Internet Protocol) est un numéro unique assigné à chaque appareil souhaitant entrer en communication avec Internet : ordinateur, téléphone, objet connecté...<br>
+                            L'adresse IP a principalement deux fonctions : identifier un réseau ou un hôte ou connaître une localisation.<br>
+                            D'abord codée sur 32bits (Protocol IPV4), l'adresse IP un numéro assigné par l'IANA qui est l'organisme chargé leurs attributions. Notamment via des accords régionaux et les différents fournisseurs d'accès locaux (Téléphonie mobile et Internet notamment).<br>
+                            Face à la pénurie d'adresses IP disponible, due notamment l'émérgence de "l'Internet des objets", un nouveau standard sur 128bits crée dés 1995 est en cours de déploiement (norme IPV6).</p>
+                            <br>
+                            <p class="text-left">Lorsque vous êtes sur internet et que vous naviguez sur un site web à l'aide d'un navigateur, cette information (votre IP) est systématiquement tracée et enregistrée dans les logs ou "journaux d'activités" du serveur distant.<br>
+                            Toutefois, seule une décision de justice autorise de remonter une adresse IP jusqu'à son propriétaire physique.</p>
+
+                            <br>
+                            <hr class="full">
+                            <h3>IP locale et IP publique</h3>
+                            <p class="text-left">Il faut bien faire la distinction entre une IP locale (attribuée par son réseau ou sa "box" internet à son ordinateur ) et l'IP publique de la box elle-même.<br>
+                            C'est celle-ci qu'il faut connaitre et qui est connectée au réseau "mondial" et qui permet d'identifier sa localisation voire son propriétaire.<br>
+                            Même si elle n'est pas nominative en l'état, le fournisseur d'accès est en effet en mesure - sur demande - de retrouver son propriétaire.<br>
+                            D'où l'emérgence de systèmes d'anonymisation tels que les VPN et les proxies qui fonctionnent de manière très simple. C'est pas leur biais (et donc leur IP) que votre appareil se raccorde au réseau Internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="pt-5 text-center">
+        <h6 style="color: #3c3556;">
+            &copy; VooDoo 2019-2020 All Rights Reserved
+        </h6>
+        <a href="https://twitter.com/DearVooDoo?ref_src=twsrc%5Etfw" target="_blank" class="twitter-follow-button" data-show-count="false">Follow @DearVooDoo</a>
+
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+        <!-- JS -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js'></script>
+        <script src='js/main.js'></script>
+    </body>
+</html>
